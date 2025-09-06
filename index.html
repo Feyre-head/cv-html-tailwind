@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Inara Oenning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            /* Cor de fundo suave para a visualização */
+        }
+
+        /* Estilos para a impressão */
+        @media print {
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                background-color: #fff !important;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .resume-container {
+                box-shadow: none !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            /* Tenta evitar que seções quebrem no meio da página */
+            .section-break-avoid {
+                break-inside: avoid;
+            }
+        }
+
+        /* Definição do tamanho da página para impressão */
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex justify-center p-4 sm:p-8">
+
+    <!-- Botão para Salvar como PDF -->
+    <button onclick="window.print()"
+        class="no-print fixed top-4 right-4 bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 z-10 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <path d="M6 14h12v8H6z" />
+        </svg>
+        Salvar como PDF
+    </button>
+
+    <!-- Conteúdo do Currículo -->
+    <div class="resume-container bg-white w-full max-w-4xl shadow-2xl rounded-lg text-gray-800">
+        <div class="p-8 sm:p-12">
+            <!-- Cabeçalho -->
+            <header class="text-center border-b-2 border-gray-200 pb-6 mb-8">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">Inara Oenning</h1>
+                <div
+                    class="mt-4 text-sm sm:text-base text-gray-500 flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+                    <span class="flex items-center">📍 Francisco Beltrão, PR</span>
+                    <a href="mailto:inaraoenning@gmail.com"
+                        class="flex items-center hover:text-blue-600 transition-colors">📧 inaraoenning@gmail.com</a>
+                    <span class="flex items-center">📱 (046) 99983-8005</span>
+                </div>
+                <div
+                    class="mt-4 text-sm sm:text-base text-gray-500 flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+                    <a href="https://github.com/Feyre-head" target="_blank"
+                        class="flex items-center hover:text-blue-600 transition-colors">💻 github.com/Feyre-head</a>
+                    <a href="https://github.io/feyre" target="_blank"
+                        class="flex items-center hover:text-blue-600 transition-colors">🖥️ github.io/feyre</a>
+                    <a href="https://linkedin.com/in/oenninginara" target="_blank"
+                        class="flex items-center hover:text-blue-600 transition-colors">💼
+                        linkedin.com/in/oenninginara</a>
+                </div>
+            </header>
+
+            <main>
+                <!-- Resumo e Objetivo -->
+                <section class="mb-8 section-break-avoid">
+                    <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">RESUMO PROFISSIONAL
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Sou uma profissional detalhista, criativa e em constante evolução. Tenho experiência em
+                        desenvolvimento frontend (Angular, HTML, CSS, JavaScript) e conhecimentos em backend (Java,
+                        Node.js) e banco de dados (SQL Server/MySQL). Atualmente curso Análise e Desenvolvimento de
+                        Sistemas. Possuo vivência internacional nos EUA e Irlanda, inglês fluente e facilidade em
+                        trabalhar em equipes multiculturais.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed font-semibold mt-3">
+                        <strong>Objetivo:</strong> Atuar como Desenvolvedora Full Stack.
+                    </p>
+                </section>
+
+                <!-- Experiência Profissional -->
+                <section class="mb-8 section-break-avoid">
+                    <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">EXPERIÊNCIA
+                        PROFISSIONAL</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">Programador JR – Ultramega</h3>
+                                <span class="text-sm font-medium text-gray-500">Junho 2025 – Atual</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Francisco Beltrão, PR</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Desenvolvimento de interfaces utilizando Angular, HTML, CSS e JavaScript.</li>
+                                <li>Apoio em aplicações VB.NET e integrações com Microsoft SQL Server.</li>
+                                <li>Colaboração em melhorias de usabilidade e performance de sistemas internos.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">Voluntária – Biblioteca Pública de
+                                    Geneva</h3>
+                                <span class="text-sm font-medium text-gray-500">Fev 2025</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Geneva, NY, EUA</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Atendimento ao público e organização de acervos.</li>
+                                <li>Apoio em eventos culturais e incentivo à leitura.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">Intercâmbio a Trabalho – Cultural Care
+                                </h3>
+                                <span class="text-sm font-medium text-gray-500">Maio 2024 – Maio 2025</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">EUA</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Vivência em ambiente internacional com imersão cultural.</li>
+                                <li>Desenvolvimento de autonomia, responsabilidade e comunicação.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">E-commerce / Administração / Suporte –
+                                    GAAM</h3>
+                                <span class="text-sm font-medium text-gray-500">Maio 2021 – Março 2022</span>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2">
+                                <li>Suporte ao cliente em canais digitais e plataformas de e-commerce.</li>
+                                <li>Execução de rotinas administrativas e acompanhamento de vendas online.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">Intercâmbio Estudantil – Student Campus
+                                </h3>
+                                <span class="text-sm font-medium text-gray-500">Janeiro 2020 – Dezembro 2020</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Irlanda</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Aprimoramento do inglês em ambiente internacional.</li>
+                                <li>Desenvolvimento de habilidades interculturais.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline flex-wrap">
+                                <h3 class="font-semibold text-lg text-gray-900">Atendimento e Suporte Geral – Center
+                                    Copy</h3>
+                                <span class="text-sm font-medium text-gray-500">2017–2019 e 2022–2023</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Ampére, PR</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Atendimento ao cliente e suporte técnico básico.</li>
+                                <li>Organização de arquivos e operação de equipamentos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Força uma quebra de página aqui se necessário, mas o 'break-inside: avoid' deve lidar com isso -->
+                <div style="page-break-before: auto;"></div>
+
+                <!-- Formação e Habilidades -->
+                <div class="grid md:grid-cols-2 gap-x-12">
+                    <section class="mb-8 section-break-avoid">
+                        <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">FORMAÇÃO
+                            ACADÊMICA</h2>
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="font-semibold text-lg text-gray-900">Análise e Desenvolvimento de Sistemas
+                                </h3>
+                                <span class="text-sm font-medium text-gray-500">2025 – 2027</span>
+                            </div>
+                            <p class="text-gray-600">UNIPAR – Universidade Paranaense</p>
+                        </div>
+                    </section>
+
+                    <section class="mb-8 section-break-avoid">
+                        <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">IDIOMAS</h2>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><strong>Inglês:</strong> Fluente</li>
+                            <li><strong>Alemão:</strong> Básico</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-8 md:col-span-2 section-break-avoid">
+                        <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">HABILIDADES
+                            TÉCNICAS (HARD SKILLS)</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Frontend</h4>
+                                <p class="text-gray-600">Angular, JavaScript, HTML, CSS</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Backend</h4>
+                                <p class="text-gray-600">Java (em andamento), Node.js</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Banco de Dados</h4>
+                                <p class="text-gray-600">Microsoft SQL Server, MySQL</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Ferramentas</h4>
+                                <p class="text-gray-600">Git, GitHub, VS Code</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Outros</h4>
+                                <p class="text-gray-600">Pacote Office, Manutenção de Computadores</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-8 md:col-span-2 section-break-avoid">
+                        <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">HABILIDADES
+                            INTERPESSOAIS (SOFT SKILLS)</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Criatividade
+                                e atenção aos detalhes</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Comunicação
+                                em equipes multiculturais</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Organização
+                                e responsabilidade</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Autonomia
+                                e resiliência</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Proatividade
+                                e aprendizado contínuo</span>
+                        </div>
+                    </section>
+
+                    <section class="mb-8 md:col-span-2 section-break-avoid">
+                        <h2 class="text-xl font-bold text-blue-700 border-b-2 border-blue-100 pb-2 mb-4">CONHECIMENTOS
+                            COMPLEMENTARES</h2>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>Engenharia e Estrutura de Dados</li>
+                            <li>Banco de Dados (MySQL)</li>
+                            <li>Full Stack Python (EBAC)</li>
+                            <li>JavaScript (Curso em Vídeo – certificado)</li>
+                            <li>Java (Curso em Vídeo – em andamento)</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
